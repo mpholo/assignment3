@@ -1,0 +1,28 @@
+Part 4 - Billing and Collection
+1. Introduction
+In Part 2 of this Primer, you learned about the lifecycle of agreements. We have seen how RequestSpecifications represent transactions that take the insurance policy through its life cycle. We have seen how to add these RequestSpecifications to the product model and we learned in Parts 2 and 3 that we need to add logic to these RequestSpecifications such that they perform the business logic that is required in each of these transactions.
+ 
+In Part 2, we looked at a simple logic to allocate a policy number to the new quote. Note that by allocating this logic to the requestBehaviour we enable the insurance company to apply their own specific logic for allocating policy numbers. Since this logic is triggered from the requestBehaviour it can differ from one product to the next.
+ 
+In Part 3 we took the next step and we created logic to perform the premium calculation. This allowed us to start exploring the Financial Transaction component. In this Part 4 of the Silvermoon Primer, we will continue with the lifecycle of the insurance policy and we will create and run the ‘Issue Policy’ process. This transaction will change the lifecycle status of the insurance policy from ‘Applied’ to ‘In Force’. The insurance policy will then begin to bear the risk that is written in the contract. In return, the insurance company will collect the premium. In the ‘In Force’ status, the Insurance policy is turned into a financial vehicle that will enable creating scheduled payments due and collecting premium payments. We perform standard double entry bookkeeping for these PaymentDue objects as well as for the Payment objects. This Part 4 will also introduce us to the world of Accounts and MoneySchedulers. 
+2. The ‘Issue Insurance Policy’ process
+2.1. Goal of ‘Issue Insurance Policy’ process
+The goal of the ‘Issue Insurance Policy’ process is to issue a written document that defines the agreement between the policyholder and the insurance company. Once the policy is issued the insurance company starts bearing the risk that is insured in the policy. From that point onwards, the policy is in force, or in lifecycle terms, in the ‘In Force’ state. At this time also, the insurance company begins sending bills to the policyholder (or premium payer). The insurance company also collects premiums from the policyholder and accounts for the payments received. This is done by the ‘Billing’ and ‘Collection’ processes. 
+
+2.2. Data structures set up by the ‘Issue Insurance Policy’ process
+The ‘Issue Insurance Policy’ process prepares the insurance policy for the ‘Billing’ and ‘Collection’ processes by setting up the data structures that these processes will use. This naturally leads us into the domain of financial transaction and accounting.
+ 
+Figure 1, below, represents a Class Diagram showing the main classes we will use in the Billing and Collection processes. These classes will allow us to capture the data required for these processes. 
+
+
+2.2.1. Data structures required for the ‘Billing’ process
+From a business perspective, ‘Billing’ is the process of establishing the payment that is due from the customer as a result of his commitment as agreed in the insurance contract. LUNOS records this information as a PaymentDue object in the sense of the class diagram in Figure 1. Usually, insurance policies will require this process to be repeated with a given frequency. To hold the details about when this process needs to run a MoneyScheduler object will be created and linked to the policy. Since this MoneyScheduler knows when actual PaymentDue objects need to be created for the premiums, it is said that they ‘control’ the MoneyProvision objects which represent the premiums for the insurance policy. Remember that in Part 3 we created the premium for the insurance policy as an instance of a MoneyProvision[1].
+ 
+For the purposes of the Billing process, this ‘control’ of the MoneyProvision objects allows the MoneyScheduler to create PaymentDue objects from the data in the MoneyProvision and to account for these objects in AccountEntries.
+ 
+If we now look back at the class diagram in Figure 1 we see two families of objects. The first family of objects includes those objects that are created as part of the regular execution of the Billing and Collection processes. This includes the Payment, PaymentDue and the AccountEntry objects. The second family of objects includes those objects that are created when issuing the insurance policy. This must certainly include the premium MoneyProvision and the MoneyScheduler objects because these represent what was agreed with the customer. In order to enable the policy as a financial instrument, any accounts that track the position of the premium payments for this policy must be created when issuing the insurance policy.
+ 
+The objects in the second family will be linked to the insurance policy. We say that these objects play a role in the insurance policy. This fact is represented on the PSD by adding RoleSpec objects on the PSD.
+ 
+To represent the fact that the insurance policy requires a ‘Billing Scheduler’ that will be used for driving the Billing process, a ‘Billing Scheduler’ RoleSpec is added to the Product Specification Diagram (PSD) as shown in the diagram below. Also, we model a ‘Frequency’  PropertySpec on this RoleSpec which will allow the user to enter a value for the Frequency on the User Interface.
+

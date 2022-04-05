@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Generated with PMW for Silvermoon version 5.0 -->
+<prod:PublishMarketableProductsRequest xmlns:acord="http://ACORD.org/Standards/ProductSchema/1" xmlns:smg="http://silvermoongroup.com/xsd/ProductSchema/1" xmlns:imax="http://www.ibm.com/ima/IMAXML" xmlns:prod="http://silvermoongroup.com/xsd/ProductDevelopment/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://silvermoongroup.com/xsd/ProductSchema/1 ../../ProductExchangeModel/xsd/ProductSchema.xsd">
+    <prod:RequestHeader>
+        <imax:id>_bs3dwL6YEeW3ZogUNeob7g</imax:id>
+        <imax:cmdType>request</imax:cmdType>
+        <imax:cmdMode>alwaysRespond</imax:cmdMode>
+        <imax:echoBack>false</imax:echoBack>
+    </prod:RequestHeader>
+    <prod:MarketableProductVersion>
+        <smg:TopLevelSpecification>
+            <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+            <acord:Type>Life &amp; Investment</acord:Type>
+            <acord:Name>Mortgage Life1</acord:Name>
+            <acord:Kind>Mortgage Life</acord:Kind>
+            <acord:Description></acord:Description>
+            <acord:UUID>_ulw90LtgEeW7W8KpbZ1aWQ</acord:UUID>
+            <acord:DefaultDisplayName>Mortgage Life</acord:DefaultDisplayName>
+            <acord:SpecificationElementKey>'Mortgage Life'</acord:SpecificationElementKey>
+            <acord:ProductComponentAssociation xsi:type="smg:ProductComposition">
+                <acord:MaximumNumberOfComponents>2</acord:MaximumNumberOfComponents>
+                <acord:MinimumNumberOfComponents>1</acord:MinimumNumberOfComponents>
+                <acord:ProductComponent>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Agreement Specification</acord:Type>
+                    <acord:Name>Protected Life1</acord:Name>
+                    <acord:Kind>Protected Life</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_9_XlELtgEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Protected Life</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Protected Life'</acord:SpecificationElementKey>
+                    <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                        <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                        <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                        <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                            <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                            <acord:Type>Role Specification</acord:Type>
+                            <acord:Name>Insured Person1</acord:Name>
+                            <acord:Kind>Insured Person</acord:Kind>
+                            <acord:Description>Any person named on the Schedule of Cover who is eligible to be Insured and for whom premium has been paid.</acord:Description>
+                            <acord:UUID>_8wyy8Hk5EeSN5Ohm-A36jA</acord:UUID>
+                            <acord:DefaultDisplayName>Insured Person</acord:DefaultDisplayName>
+                            <acord:SpecificationElementKey>'Insured Person'</acord:SpecificationElementKey>
+                            <smg:ConformanceType>Party</smg:ConformanceType>
+                        </acord:RoleSpecification>
+                        <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+                    </acord:RoleSpecificationAssociation>
+                    <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                        <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                        <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                        <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                            <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                            <acord:Type>Role Specification</acord:Type>
+                            <acord:Name>Premium4</acord:Name>
+                            <acord:Kind>Premium</acord:Kind>
+                            <acord:Description>Premium paid by policyholder</acord:Description>
+                            <acord:UUID>_MFtMoLtsEeW7W8KpbZ1aWQ</acord:UUID>
+                            <acord:DefaultDisplayName>Premium</acord:DefaultDisplayName>
+                            <acord:SpecificationElementKey>Premium</acord:SpecificationElementKey>
+                            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+<acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+<acord:Name>Requested Premium</acord:Name>
+<acord:Kind>Requested Premium</acord:Kind>
+<acord:Description></acord:Description>
+<acord:UUID>_XZvssLtsEeW7W8KpbZ1aWQ</acord:UUID>
+<acord:SpecificationElementKey>Premium.'Requested Premium'</acord:SpecificationElementKey>
+<acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+<acord:IsCalculated>false</acord:IsCalculated>
+<smg:DataType>MEASUREAMOUNT</smg:DataType>
+<smg:Measure>Currency</smg:Measure>
+                            </acord:PropertySpecification>
+                            <smg:ConformanceType>Money Provision</smg:ConformanceType>
+                        </acord:RoleSpecification>
+                        <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+                    </acord:RoleSpecificationAssociation>
+                    <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                        <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                        <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                        <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                            <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                            <acord:Type>Role Specification</acord:Type>
+                            <acord:Name>Premium Earned1</acord:Name>
+                            <acord:Kind>Premium Earned</acord:Kind>
+                            <acord:Description></acord:Description>
+                            <acord:UUID>_eqzU8LtrEeW7W8KpbZ1aWQ</acord:UUID>
+                            <acord:DefaultDisplayName>Premium Earned</acord:DefaultDisplayName>
+                            <acord:SpecificationElementKey>'Premium Earned'</acord:SpecificationElementKey>
+                            <smg:ConformanceType>Money Provision</smg:ConformanceType>
+                        </acord:RoleSpecification>
+                        <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+                    </acord:RoleSpecificationAssociation>
+                    <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Name>Protected Percentage</acord:Name>
+                        <acord:Kind>Protected Percentage</acord:Kind>
+                        <acord:Description></acord:Description>
+                        <acord:UUID>_g65S0LtsEeW7W8KpbZ1aWQ</acord:UUID>
+                        <acord:SpecificationElementKey>'Protected Life'.'Protected Percentage'</acord:SpecificationElementKey>
+                        <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                        <acord:IsCalculated>false</acord:IsCalculated>
+                        <smg:DataType>PERCENTAGE</smg:DataType>
+                    </acord:PropertySpecification>
+                    <acord:Calculation xsi:type="smg:Calculation">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Type>Calculation Specification</acord:Type>
+                        <acord:Name>Premium1</acord:Name>
+                        <acord:Kind>Premium</acord:Kind>
+                        <acord:Description>This calculation creates a money provision which will be the role player for the premium role. This calculation uses the output from the loan schedule calculation at the level of the parent product. The loan schedule calculation produces a&#xD;
+LoanBalanceCalculator object from which the premium calculation can obtain the loan balance amounts of which a percentage needs to be insured under this Protected Life coverage. The insured amounts are finally input to a&#xD;
+CreditLifePremiumCalculator which finally calculates the insurance premiums for this coverage.</acord:Description>
+                        <acord:UUID>_v_rgoLtsEeW7W8KpbZ1aWQ</acord:UUID>
+                        <acord:DefaultDisplayName>Premium</acord:DefaultDisplayName>
+                        <acord:SpecificationElementKey>Premium</acord:SpecificationElementKey>
+                        <acord:ExpressionFormat>JavaClassName</acord:ExpressionFormat>
+                        <acord:Expression>com.silvermoongroup.spflite.psd.calculationlogic.DefaultCalculationLogic</acord:Expression>
+                        <smg:CriteriaSet>
+                            <smg:CriteriaType>
+<smg:TypeName>REQUEST_KIND</smg:TypeName>
+<smg:IsDefault>true</smg:IsDefault>
+                            </smg:CriteriaType>
+                        </smg:CriteriaSet>
+                        <smg:Priority>500</smg:Priority>
+                    </acord:Calculation>
+                </acord:ProductComponent>
+                <smg:DefaultNumberOfComponents>1</smg:DefaultNumberOfComponents>
+            </acord:ProductComponentAssociation>
+            <acord:RequestSpecification xsi:type="smg:RequestSpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Type>Request Specification</acord:Type>
+                <acord:Name>Abandon Quote1</acord:Name>
+                <acord:Kind>Abandon Quote</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_iwtekLtkEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:DefaultDisplayName>Abandon Quote</acord:DefaultDisplayName>
+                <acord:SpecificationElementKey>'Abandon Quote'</acord:SpecificationElementKey>
+                <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                    <acord:MaximumNumberOfRoles>99</acord:MaximumNumberOfRoles>
+                    <acord:MinimumNumberOfRoles>0</acord:MinimumNumberOfRoles>
+                    <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Type>Role Specification</acord:Type>
+                        <acord:Name>Authoriser1</acord:Name>
+                        <acord:Kind>Authoriser</acord:Kind>
+                        <acord:Description></acord:Description>
+                        <acord:UUID>_NqxxMLtlEeW7W8KpbZ1aWQ</acord:UUID>
+                        <acord:DefaultDisplayName>Authoriser</acord:DefaultDisplayName>
+                        <acord:SpecificationElementKey>'Abandon Quote'.Authoriser</acord:SpecificationElementKey>
+                        <smg:ConformanceType>Party</smg:ConformanceType>
+                    </acord:RoleSpecification>
+                    <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+                </acord:RoleSpecificationAssociation>
+                <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                    <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                    <acord:MinimumNumberOfRoles>0</acord:MinimumNumberOfRoles>
+                    <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Type>Role Specification</acord:Type>
+                        <acord:Name>Overrider1</acord:Name>
+                        <acord:Kind>Overrider</acord:Kind>
+                        <acord:Description></acord:Description>
+                        <acord:UUID>_RilJMbtlEeW7W8KpbZ1aWQ</acord:UUID>
+                        <acord:DefaultDisplayName>Overrider</acord:DefaultDisplayName>
+                        <acord:SpecificationElementKey>'Abandon Quote'.Overrider</acord:SpecificationElementKey>
+                        <smg:ConformanceType>Party</smg:ConformanceType>
+                    </acord:RoleSpecification>
+                    <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+                </acord:RoleSpecificationAssociation>
+                <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                    <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                    <acord:MinimumNumberOfRoles>0</acord:MinimumNumberOfRoles>
+                    <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Type>Role Specification</acord:Type>
+                        <acord:Name>Requestor1</acord:Name>
+                        <acord:Kind>Requestor</acord:Kind>
+                        <acord:Description></acord:Description>
+                        <acord:UUID>_UcNowLtlEeW7W8KpbZ1aWQ</acord:UUID>
+                        <acord:DefaultDisplayName>Requestor</acord:DefaultDisplayName>
+                        <acord:SpecificationElementKey>'Abandon Quote'.Requestor</acord:SpecificationElementKey>
+                        <smg:ConformanceType>Party</smg:ConformanceType>
+                    </acord:RoleSpecification>
+                    <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+                </acord:RoleSpecificationAssociation>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Valid</acord:Name>
+                    <acord:Kind>Behaviour When Valid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_7eK20LtkEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.iaainsco.fsa.requestbehaviour.AbandonQuoteRequestBehaviourSpec</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestType>VERSIONING</smg:RequestType>
+                <smg:SourceState>Quoted</smg:SourceState>
+                <smg:TargetState>Quote Abandoned</smg:TargetState>
+                <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet"/>
+            </acord:RequestSpecification>
+            <acord:RequestSpecification xsi:type="smg:RequestSpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Type>Request Specification</acord:Type>
+                <acord:Name>Apply From Quote1</acord:Name>
+                <acord:Kind>Apply From Quote</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_kv89ALtlEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:DefaultDisplayName>Apply From Quote</acord:DefaultDisplayName>
+                <acord:SpecificationElementKey>'Apply From Quote'</acord:SpecificationElementKey>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Process Behaviour Before </acord:Name>
+                    <acord:Kind>Process Behaviour Before </acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_8ninwLtmEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.fsalogic.shared.process.ProductEligibilityRuleLogic</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Valid</acord:Name>
+                    <acord:Kind>Behaviour When Valid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_SQ3goLtnEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.fsalogic.product.computerloss.requestbehaviour.ComputerLossApplyFromQuoteRequestBehaviourLogic</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Invalid</acord:Name>
+                    <acord:Kind>Behaviour When Invalid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_rOvTcLtnEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.spflite.psd.requestbehaviour.DefaultRequestBehaviourSpec</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestType>VERSIONING</smg:RequestType>
+                <smg:SourceState>Quoted</smg:SourceState>
+                <smg:TargetState>Applied</smg:TargetState>
+                <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet"/>
+            </acord:RequestSpecification>
+            <acord:RequestSpecification xsi:type="smg:RequestSpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Type>Request Specification</acord:Type>
+                <acord:Name>Generate Policy Document1</acord:Name>
+                <acord:Kind>Generate Policy Document</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_IYwogbtmEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:DefaultDisplayName>Generate Policy Document</acord:DefaultDisplayName>
+                <acord:SpecificationElementKey>'Generate Policy Document'</acord:SpecificationElementKey>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Valid</acord:Name>
+                    <acord:Kind>Behaviour When Valid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_Sl2uoLtmEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.iaainsco.fsa.requestbehaviour.PrintPolicyBehaviour</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestType>STANDARD</smg:RequestType>
+                <smg:SourceState>In Force</smg:SourceState>
+                <smg:TargetState></smg:TargetState>
+                <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet"/>
+            </acord:RequestSpecification>
+            <acord:RequestSpecification xsi:type="smg:RequestSpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Type>Request Specification</acord:Type>
+                <acord:Name>Issue Insurance Policy1</acord:Name>
+                <acord:Kind>Issue Insurance Policy</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_HNgrcLtoEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:DefaultDisplayName>Issue Insurance Policy - DefaultBehaviour</acord:DefaultDisplayName>
+                <acord:SpecificationElementKey>'Issue Insurance Policy'</acord:SpecificationElementKey>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Process Behaviour Before </acord:Name>
+                    <acord:Kind>Process Behaviour Before </acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_8ninwLtmEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.fsalogic.shared.process.ProductEligibilityRuleLogic</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Valid</acord:Name>
+                    <acord:Kind>Behaviour When Valid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_ci1qQLtoEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.fsalogic.product.computerloss.requestbehaviour.IssueComputerLossInsurance</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Invalid</acord:Name>
+                    <acord:Kind>Behaviour When Invalid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_rOvTcLtnEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.spflite.psd.requestbehaviour.DefaultRequestBehaviourSpec</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:LifeCycle></smg:LifeCycle>
+                <smg:RequestType>VERSIONING</smg:RequestType>
+                <smg:SourceState>Applied</smg:SourceState>
+                <smg:TargetState>In Force</smg:TargetState>
+                <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet"/>
+            </acord:RequestSpecification>
+            <acord:RequestSpecification xsi:type="smg:RequestSpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Type>Request Specification</acord:Type>
+                <acord:Name>Quote for Insurance1</acord:Name>
+                <acord:Kind>Quote for Insurance</acord:Kind>
+                <acord:Description>An approximate premium value for the coverages selected by the policy holder, based on a reduced set of information.&#xD;
+</acord:Description>
+                <acord:UUID>_0rrTIT2FEeKva5OBBM3asw</acord:UUID>
+                <acord:DefaultDisplayName>Quote for Insurance</acord:DefaultDisplayName>
+                <acord:SpecificationElementKey>'Quote for Insurance'</acord:SpecificationElementKey>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Process Behaviour Before </acord:Name>
+                    <acord:Kind>Process Behaviour Before </acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_8ninwLtmEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.fsalogic.shared.process.ProductEligibilityRuleLogic</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Valid</acord:Name>
+                    <acord:Kind>Behaviour When Valid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_9SPfsLtoEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.fsalogic.product.computerloss.requestbehaviour.ComputerLossQuoteForInsuranceRequestBehaviourLogic2</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestBehaviourSpecification>
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Name>Behaviour When Invalid</acord:Name>
+                    <acord:Kind>Behaviour When Invalid</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_rOvTcLtnEeW7W8KpbZ1aWQ</acord:UUID>
+                    <smg:BehaviourClass>com.silvermoongroup.spflite.psd.requestbehaviour.DefaultRequestBehaviourSpec</smg:BehaviourClass>
+                </smg:RequestBehaviourSpecification>
+                <smg:RequestType>VERSIONING</smg:RequestType>
+                <smg:TargetState>Quoted</smg:TargetState>
+                <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet"/>
+            </acord:RequestSpecification>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Billing Account</acord:Name>
+                    <acord:Kind>Billing Account</acord:Kind>
+                    <acord:Description>This represents the accounts that will be debited and credited for bills raised and premiums collected.</acord:Description>
+                    <acord:UUID>_lKuKQLthEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Billing Account</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Billing Account'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Account</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Billing Scheduler1</acord:Name>
+                    <acord:Kind>Billing Scheduler</acord:Kind>
+                    <acord:Description>The Billing Scheduler is responsible for setting up the 'payment due' from a customer.</acord:Description>
+                    <acord:UUID>_0sRQYT2CEeKva5OBBM3asw</acord:UUID>
+                    <acord:DefaultDisplayName>Billing Scheduler</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Billing Scheduler'</acord:SpecificationElementKey>
+                    <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Name>Billing Frequency</acord:Name>
+                        <acord:Kind>Billing Frequency</acord:Kind>
+                        <acord:Description>Determines how often each year an event will occur&#xD;
+&#xD;
+</acord:Description>
+                        <acord:UUID>_9f1PgM6EEeK3-Io5wKvPTg</acord:UUID>
+                        <acord:SpecificationElementKey>'Billing Scheduler'.'Billing Frequency'</acord:SpecificationElementKey>
+                        <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                        <acord:IsCalculated>false</acord:IsCalculated>
+                        <smg:DataType>INTEGER</smg:DataType>
+                        <smg:PropertySpecValueSet>
+                            <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet">
+<smg:CriteriaType>
+    <smg:TypeName>REQUEST_KIND</smg:TypeName>
+    <smg:IsDefault>true</smg:IsDefault>
+</smg:CriteriaType>
+                            </smg:SimpleCriteriaSet>
+                            <smg:AllowedValue>
+<smg:PropertyValue>
+    <smg:Value>12</smg:Value>
+</smg:PropertyValue>
+                            </smg:AllowedValue>
+                            <smg:AllowedValue>
+<smg:PropertyValue>
+    <smg:Value>2</smg:Value>
+</smg:PropertyValue>
+                            </smg:AllowedValue>
+                            <smg:AllowedValue>
+<smg:PropertyValue>
+    <smg:Value>4</smg:Value>
+</smg:PropertyValue>
+                            </smg:AllowedValue>
+                            <smg:AllowedValue>
+<smg:PropertyValue>
+    <smg:Value>1</smg:Value>
+</smg:PropertyValue>
+                            </smg:AllowedValue>
+                            <smg:DefaultValue>
+<smg:PropertyValue>
+    <smg:Value>12</smg:Value>
+</smg:PropertyValue>
+                            </smg:DefaultValue>
+                        </smg:PropertySpecValueSet>
+                    </acord:PropertySpecification>
+                    <smg:ConformanceType>Money Scheduler</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Collection Provision1</acord:Name>
+                    <acord:Kind>Collection Provision</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_urcdILtiEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Collection Provision</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Collection Provision'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Money Provision</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Collection Scheduler1</acord:Name>
+                    <acord:Kind>Collection Scheduler</acord:Kind>
+                    <acord:Description>Process to collect premium payment from the policyholder</acord:Description>
+                    <acord:UUID>_VZ-Ucc6FEeK3-Io5wKvPTg</acord:UUID>
+                    <acord:DefaultDisplayName>Collection Scheduler</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Collection Scheduler'</acord:SpecificationElementKey>
+                    <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Name>Payment Method</acord:Name>
+                        <acord:Kind>Payment Method</acord:Kind>
+                        <acord:Description>Method by which premium is paid by policyholder&#xD;
+</acord:Description>
+                        <acord:UUID>_mMJ4MM6FEeK3-Io5wKvPTg</acord:UUID>
+                        <acord:SpecificationElementKey>'Collection Scheduler'.'Payment Method'</acord:SpecificationElementKey>
+                        <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                        <acord:IsCalculated>false</acord:IsCalculated>
+                        <smg:DataType>STRING</smg:DataType>
+                        <smg:PropertySpecValueSet>
+                            <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet">
+<smg:CriteriaType>
+    <smg:TypeName>REQUEST_KIND</smg:TypeName>
+    <smg:IsDefault>true</smg:IsDefault>
+</smg:CriteriaType>
+                            </smg:SimpleCriteriaSet>
+                            <smg:AllowedValue>
+<smg:PropertyValue>
+    <smg:Value>Deposit</smg:Value>
+</smg:PropertyValue>
+                            </smg:AllowedValue>
+                            <smg:AllowedValue>
+<smg:PropertyValue>
+    <smg:Value>Direct Debit</smg:Value>
+</smg:PropertyValue>
+                            </smg:AllowedValue>
+                            <smg:AllowedValue>
+<smg:PropertyValue>
+    <smg:Value>Parent Agreement</smg:Value>
+</smg:PropertyValue>
+                            </smg:AllowedValue>
+                            <smg:DefaultValue>
+<smg:PropertyValue>
+    <smg:Value>Debit Order</smg:Value>
+</smg:PropertyValue>
+                            </smg:DefaultValue>
+                        </smg:PropertySpecValueSet>
+                    </acord:PropertySpecification>
+                    <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                        <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                        <acord:Name>Specific Collection Day</acord:Name>
+                        <acord:Kind>Specific Collection Day</acord:Kind>
+                        <acord:Description>Day of the month on which the premium is collected</acord:Description>
+                        <acord:UUID>_yklNcM6FEeK3-Io5wKvPTg</acord:UUID>
+                        <acord:SpecificationElementKey>'Collection Scheduler'.'Specific Collection Day'</acord:SpecificationElementKey>
+                        <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                        <acord:IsCalculated>false</acord:IsCalculated>
+                        <smg:DataType>INTEGER</smg:DataType>
+                        <smg:PropertySpecValueSet>
+                            <smg:DefaultValue>
+<smg:PropertyValue>
+    <smg:Value>1</smg:Value>
+</smg:PropertyValue>
+                            </smg:DefaultValue>
+                        </smg:PropertySpecValueSet>
+                    </acord:PropertySpecification>
+                    <smg:ConformanceType>Money Scheduler</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Credit Provider1</acord:Name>
+                    <acord:Kind>Credit Provider</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_CWaL4btjEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Credit Provider</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Credit Provider'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Party</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Insurance Company1</acord:Name>
+                    <acord:Kind>Insurance Company</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_K-p0ELtjEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Insurance Company</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Insurance Company'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Party</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Policy Document1</acord:Name>
+                    <acord:Kind>Policy Document</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_QDEJILtjEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Policy Document</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Policy Document'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Communication</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Policyholder5</acord:Name>
+                    <acord:Kind>Policyholder</acord:Kind>
+                    <acord:Description>A person or an organization that has an insurance policy. The policyholder receives the specific types of coverage (comprehensive, third party etc.) stated in the policy, subject to the payment of premiums, usually on a monthly basis. It is important to note that a policyholder does not make any legally enforceable promises when he/she takes out a policy. Specifically, the insurance company cannot legally compel the policyholder to pay his/her premiums; its only recourse is to stop coverage. On the other hand, the policyholder can force the insurance company to provide coverage if it refuses to do so, provided he/she has in fact paid premiums.&#xD;
+&#xD;
+(A party who owns an insurance policy).&#xD;
+&#xD;
+</acord:Description>
+                    <acord:UUID>_cnsuYLtjEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Policyholder</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>Policyholder</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Party</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Premium Earned Scheduler1</acord:Name>
+                    <acord:Kind>Premium Earned Scheduler</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_x2iqsLtjEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Premium Earned Scheduler</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Premium Earned Scheduler'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Money Scheduler</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Premium in Advance Account1</acord:Name>
+                    <acord:Kind>Premium in Advance Account</acord:Kind>
+                    <acord:Description></acord:Description>
+                    <acord:UUID>_8vzTQLtjEeW7W8KpbZ1aWQ</acord:UUID>
+                    <acord:DefaultDisplayName>Premium in Advance Account</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Premium in Advance Account'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Account</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:RoleSpecificationAssociation xsi:type="smg:RoleComposition">
+                <acord:MaximumNumberOfRoles>1</acord:MaximumNumberOfRoles>
+                <acord:MinimumNumberOfRoles>1</acord:MinimumNumberOfRoles>
+                <acord:RoleSpecification xsi:type="smg:RoleSpecification">
+                    <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                    <acord:Type>Role Specification</acord:Type>
+                    <acord:Name>Premium Payer1</acord:Name>
+                    <acord:Kind>Premium Payer</acord:Kind>
+                    <acord:Description>A party who pays the premium due under an agreement.</acord:Description>
+                    <acord:UUID>_bgZ9sQ2IEeSOAsytmojtyQ</acord:UUID>
+                    <acord:DefaultDisplayName>Premium Payer</acord:DefaultDisplayName>
+                    <acord:SpecificationElementKey>'Premium Payer'</acord:SpecificationElementKey>
+                    <smg:ConformanceType>Party</smg:ConformanceType>
+                </acord:RoleSpecification>
+                <smg:DefaultNumberOfRoles>1</smg:DefaultNumberOfRoles>
+            </acord:RoleSpecificationAssociation>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Currency Code</acord:Name>
+                <acord:Kind>Currency Code</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_G3Wb8LttEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Currency Code'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>STRING</smg:DataType>
+                <smg:PropertySpecValueSet>
+                    <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet">
+                        <smg:CriteriaType>
+                            <smg:TypeName>REQUEST_KIND</smg:TypeName>
+                            <smg:IsDefault>true</smg:IsDefault>
+                        </smg:CriteriaType>
+                    </smg:SimpleCriteriaSet>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>USD</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>CAD</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>ZAR</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>GBP</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>EUR</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                </smg:PropertySpecValueSet>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Frequency of Loan Repayments</acord:Name>
+                <acord:Kind>Frequency of Loan Repayments</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_b7lqwLttEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Frequency of Loan Repayments'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>INTEGER</smg:DataType>
+                <smg:PropertySpecValueSet>
+                    <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet">
+                        <smg:CriteriaType>
+                            <smg:TypeName>REQUEST_KIND</smg:TypeName>
+                            <smg:IsDefault>true</smg:IsDefault>
+                        </smg:CriteriaType>
+                    </smg:SimpleCriteriaSet>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>12</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>2</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>4</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>1</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                </smg:PropertySpecValueSet>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Loan Amount</acord:Name>
+                <acord:Kind>Loan Amount</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_noIKYLttEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Loan Amount'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>MEASUREAMOUNT</smg:DataType>
+                <smg:Measure>Currency</smg:Measure>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Loan End Date</acord:Name>
+                <acord:Kind>Loan End Date</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_r_dXALttEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Loan End Date'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>DATE</smg:DataType>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Loan Interest Rate</acord:Name>
+                <acord:Kind>Loan Interest Rate</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_wi1bkLttEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Loan Interest Rate'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>PERCENTAGE</smg:DataType>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Loan Repayment Option</acord:Name>
+                <acord:Kind>Loan Repayment Option</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_1qmmoLttEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Loan Repayment Option'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>STRING</smg:DataType>
+                <smg:PropertySpecValueSet>
+                    <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet">
+                        <smg:CriteriaType>
+                            <smg:TypeName>REQUEST_KIND</smg:TypeName>
+                            <smg:IsDefault>true</smg:IsDefault>
+                        </smg:CriteriaType>
+                    </smg:SimpleCriteriaSet>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>Fixed Principal</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>Fixed Repayment Amounts</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                </smg:PropertySpecValueSet>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Loan Start Date</acord:Name>
+                <acord:Kind>Loan Start Date</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_Eqj-0LtuEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Loan Start Date'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>DATE</smg:DataType>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Number of Repayments</acord:Name>
+                <acord:Kind>Number of Repayments</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_ItbXULtuEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Number of Repayments'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>INTEGER</smg:DataType>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Premium Structure</acord:Name>
+                <acord:Kind>Premium Structure</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_Re6bELtuEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Premium Structure'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>STRING</smg:DataType>
+                <smg:PropertySpecValueSet>
+                    <smg:SimpleCriteriaSet xsi:type="smg:CriteriaSet">
+                        <smg:CriteriaType>
+                            <smg:TypeName>REQUEST_KIND</smg:TypeName>
+                            <smg:IsDefault>true</smg:IsDefault>
+                        </smg:CriteriaType>
+                    </smg:SimpleCriteriaSet>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>Single Premium</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>Level Annual Premium</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                    <smg:AllowedValue>
+                        <smg:PropertyValue>
+                            <smg:Value>Variable Risk Premium</smg:Value>
+                        </smg:PropertyValue>
+                    </smg:AllowedValue>
+                </smg:PropertySpecValueSet>
+            </acord:PropertySpecification>
+            <acord:PropertySpecification xsi:type="smg:PropertySpecification">
+                <acord:LifeCycleStatus>DEVELOPMENT</acord:LifeCycleStatus>
+                <acord:Name>Start Date of Principal Repayments</acord:Name>
+                <acord:Kind>Start Date of Principal Repayments</acord:Kind>
+                <acord:Description></acord:Description>
+                <acord:UUID>_oT0g0LtvEeW7W8KpbZ1aWQ</acord:UUID>
+                <acord:SpecificationElementKey>'Mortgage Life'.'Start Date of Principal Repayments'</acord:SpecificationElementKey>
+                <acord:CanBeOverwritten>true</acord:CanBeOverwritten>
+                <acord:IsCalculated>false</acord:IsCalculated>
+                <smg:DataType>DATE</smg:DataType>
+            </acord:PropertySpecification>
+            <acord:ShortName>Mortgage Life</acord:ShortName>
+        </smg:TopLevelSpecification>
+        <smg:Name>Mortgage Life</smg:Name>
+        <smg:EffectiveFromDate>2015-11-11</smg:EffectiveFromDate>
+        <smg:EffectiveToDate>9999-12-31</smg:EffectiveToDate>
+        <smg:RenewalEffectiveFromDate>2015-11-11</smg:RenewalEffectiveFromDate>
+        <smg:RenewalEffectiveToDate>9999-12-31</smg:RenewalEffectiveToDate>
+        <smg:LifeCycleStatus>DEVELOPMENT</smg:LifeCycleStatus>
+        <smg:DefiningCriteria>
+            <smg:TypeName>Marketable Product</smg:TypeName>
+            <smg:CriteriaValue>ML</smg:CriteriaValue>
+        </smg:DefiningCriteria>
+        <smg:MarketableProductID>_1opKsLtgEeW7W8KpbZ1aWQ</smg:MarketableProductID>
+        <smg:Label>000.001.002</smg:Label>
+        <smg:Type>Marketable Product</smg:Type>
+        <smg:PlannedIssuanceDate>9999-12-31T00:00:00</smg:PlannedIssuanceDate>
+    </prod:MarketableProductVersion>
+</prod:PublishMarketableProductsRequest>
